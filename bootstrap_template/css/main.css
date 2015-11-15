@@ -7,13 +7,49 @@ input {
 	border-left: none;
 	border-right: none;
 	width: 100%;
-	margin: 15px;
+	margin-bottom: 15px;
+	margin-top: 15px;
 }
 
 textarea {
 	width: 100%;
-    margin: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 input:focus, input:active, textarea:focus, textarea:active {
 	outline: none;
 }
+.feed-title {
+	text-align: center;
+}
+
+.poster {
+	color: #fff;
+}
+
+.event-info {
+	font-size: 15px;
+}
+
+/* New Custom Panel Colors */
+.panel-post {
+    border-color: #30586d;
+}
+
+.panel-post > .panel-heading {
+    border-color: #30586d;
+    color: #fff;
+    background-color: #30586d;
+}
+
+.panel-event {
+    border-color: #50a2a9;
+}
+
+.panel-event > .panel-heading {
+    border-color: #50a2a9;
+    color: #fff;
+    background-color: #50a2a9;
+}
+
+/*#50a2a9*/

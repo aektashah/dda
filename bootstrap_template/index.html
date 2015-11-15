@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/sb-admin.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
     <link href="css/plugins/morris.css" rel="stylesheet">
@@ -49,7 +50,8 @@
       </div>
       <div class="modal-body">
         <div class="row">
-            <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-1 col-xs-1"></div>
+            <div class="col-md-10 col-xs-10">
                 <form id="eventForm" name="eventForm">
                     <input type="text" id="eventName" name="eventName" placeholder="Event Name"> <br>
                     <input type="text" id="dateTime" name="dateTime" placeholder="Date & Time"> <br>
@@ -60,6 +62,7 @@
                     <button type="submit" class="btn btn-primary pull-right" style="width: 100px;">Post</button>
                 </form>
             </div>
+            <div class="col-md-1 col-xs-1"></div>
         </div>
       </div>
     </div>
@@ -76,15 +79,15 @@
             </div>
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
+                    <div class="col-md-1 col-xs-1"></div>
+                    <div class="col-md-10 col-xs-10">
                         <form id="postForm" name="postForm">
                             <input type="text" id="postName" name="postName" placeholder="Post Title"> <br>
                             <textarea id="postContent" rows="10" placeholder="Post Content"></textarea>
-
-                            
                             <button type="submit" class="btn btn-primary pull-right" style="width: 100px;">Post</button>
                         </form>
                     </div>
+                    <div class="col-md-1 col-xs-1"></div>
                 </div>
         
             </div>
@@ -94,21 +97,27 @@
 
         <!-- WRITE POST Modal -->
 <div class="modal fade" id="askAdvice" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Ask for Advice</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-1 col-xs-1"></div>
+                    <div class="col-md-10 col-xs-10">
+                        <form id="askForm" name="askForm">
+                            <input type="text" id="askName" name="askName" placeholder="Post Title"> <br>
+                            <textarea id="askContent" rows="10" placeholder="Ask DDA users for advice! For example: Peanut has been vomiting blue liquid all day! What should I do?"></textarea>
+                            <button type="submit" class="btn btn-primary pull-right" style="width: 100px;">Post</button>
+                        </form>
+                    </div>
+                    <div class="col-md-1 col-xs-1"></div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
         <!-- Navigation -->
@@ -236,8 +245,8 @@
 
                 <!-- Page Heading -->
                 <div class="row">
-                    <div class="huge col-lg-4 page-header fa fa-paw fa-5x">
-                        My Feed 
+                    <div class="huge feed-title col-lg-4 page-header ">
+                       <h1>DDA Feed </h1> 
                     </div>                      
                         
                    <!--      <ol class="breadcrumb">
@@ -248,41 +257,36 @@
                    
                 </div>
                 <div class="row" id="feed">
+                    <!-- Event Example -->
                     <div class="col-lg-12 col-md-12">
-                        <div class="panel panel-primary">
+                        <div class="panel panel-event">
                             <div class="panel-heading">
                                 <div class="row">
                                     <div class="col-xs-3">
-                                        <i class="fa fa-birthday-cake fa-5x"></i>
+                                        <i class="fa fa-calendar fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
+                                        <!-- Event Title -->
                                         <div class="huge">Party</div>
-                                        <div>It's Peanut's Birthday!</div>
+                                        <!-- Date & Time -->
+                                        <div class="event-info"> <u>When</u>: 11-18-2015 5:00pm</div>    
+                                        <!-- Location -->
+                                        <div class="event-info"> <u>Where</u>: Boston Commons</div>
+                                        <!-- Description -->
+                                        <div><i>It's Peanut's Birthday!</i></div>
+                                      
                                     </div>
                                 </div>
-                            </div>
-                            <a href="#">
-                                <div class="panel-footer">
-                                    <span class="pull-left">Add Comment</span>
-                                    <span class="pull-right"><i class="fa fa-plus"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12">
-                        <div class="panel panel-green">
-                            <div class="panel-heading">
+
                                 <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-smile-o fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge"><a style="color:white" href="http://www.chewy.com/dog/blue-buffalo-life-protection-formula/dp/32018?utm_source=google-product&utm_medium=cpc&utm_campaign=f&utm_content=Blue%20Buffalo&utm_term=&gclid=COHN5vHojckCFYkjgQodyPcFog">Click Here</a></div>
-                                        <div>I discovered this new food for Lucy!
+                                        <div class="col-xs-6">
+                                         <!-- Posted by -->
+                                            <div class="pull-left poster">
+                                                <u>Posted by: Chet F.</u>
                                             </div>
-                                    </div>
+                                        </div>
                                 </div>
+
                             </div>
                             <a href="#">
                                 <div class="panel-footer">
@@ -293,17 +297,33 @@
                             </a>
                         </div>
                     </div>
+
+                    <!-- Post Example -->
                     <div class="col-lg-12 col-md-12">
-                        <div class="panel panel-yellow">
+                        <div class="panel panel-post">
                             <div class="panel-heading">
                                 <div class="row">
                                     <div class="col-xs-3">
-                                        <i class="fa fa-group fa-5x"></i>
+                                        <i class="fa fa-pencil-square-o fa-5x"></i>
                                     </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">Event Today</div>
-                                        <div>Come to my barbeque!</div>
+                                    <div class="col-xs-9 text-right">   
+                                    <!-- Post Title -->
+                                        <div class="huge">New Doggy Daycare!</div>
+                                        
+                                    <!-- Content -->
+                                        <div >
+                                            <p>Just took my dog, Garry, to the new doggy daycare in Harvard Square, Pawz & Love. It was so great I highly recommend it.
+                                            </p>
+                                        </div>
                                     </div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-xs-6">
+                                         <!-- Posted by -->
+                                            <div class="pull-left poster">
+                                                <u>Posted by: Julia P.</u>
+                                            </div>
+                                        </div>
                                 </div>
                             </div>
                             <a href="#">
@@ -315,6 +335,8 @@
                             </a>
                         </div>
                     </div>
+
+
                     <div class="col-lg-12 col-md-12">
                         <div class="panel panel-red">
                             <div class="panel-heading">
@@ -327,27 +349,13 @@
                                         <div>What's the best organic dog food?</div>
                                     </div>
                                 </div>
-                            </div>
-                            <a href="#">
-                                <div class="panel-footer">
-                                    <span class="pull-left">Add Comment</span>
-                                    <span class="pull-right"><i class="fa fa-plus"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12">
-                        <div class="panel panel-purple">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-question fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">Activity</div>
-                                        <div>Bill is on a walk!</div>
-                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                         <!-- Posted by -->
+                                            <div class="pull-left poster">
+                                                <u>Posted by: Matt D.</u>
+                                            </div>
+                                        </div>
                                 </div>
                             </div>
                             <a href="#">
@@ -359,6 +367,7 @@
                             </a>
                         </div>
                     </div>
+
                 </div>
 
 
