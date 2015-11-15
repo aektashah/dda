@@ -11,8 +11,30 @@ form {
 }
 
 .event-info {
-	font-size: 15px;
+	font-size: 14px;
 }
+
+.desc {
+	/*font-style: italic;*/
+	font-weight: 100;
+	word-spacing: -1px;
+	letter-spacing: 1.01px;
+}
+
+.title {
+	font-size: 25px;
+	font-weight: 200;
+}
+
+/* Dropdowns */
+li.message-preview>a {
+	padding: 0px !important;
+}
+
+li.message-preview {
+	width: auto;
+}
+
 
 /* New Custom Panel Colors */
 .panel-post {
