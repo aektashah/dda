@@ -2,6 +2,23 @@ form {
 	text-align: center;
 }   
 
+input {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	width: 100%;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+textarea {
+	width: 100%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+input:focus, input:active, textarea:focus, textarea:active {
+	outline: none;
+}
 .feed-title {
 	text-align: center;
 }
