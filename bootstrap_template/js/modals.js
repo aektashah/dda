@@ -1,4 +1,16 @@
+$("#userForm").submit(function (event) {
+	console.log("here")
+	event.preventDefault();
+	$("#user").modal('hide');
 
+	$("#msgSent").show();
+
+	//setTimeout(funtion() { $("#msgSent").hide(); }, 2000);
+	setTimeout(function(){
+  $("#msgSent").hide();
+}, 3000);
+
+})
 $("#eventForm").submit(function (event) {
 	event.preventDefault()
 
